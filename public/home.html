@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>ChatRoom.com</title>
+  <link rel='stylesheet' href='./css/home.css'>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+</head>
+<body>
+  <video autoplay muted loop id="myVideo" onloadstart="this.playbackRate = 0.4;">
+    <source src="backgroundVideo.mp4" type="video/mp4">
+  </video>
+  <div class="mainContainer">
+    <header class="header">
+      <h1>ChatRoom</h1>
+      <h2>The simplest way to share Group Chat online</h2>
+    </header>
+  
+    <main>
+      <section id='pathToGo'>
+        <form action="/" method="post" id="homeForm">
+          <div class="input-group">
+            <p class="prefix">UserId</p>
+            <input type='search' name='username' id='username' autocapitalize='none' autocorrect='off' placeholder="Enter your username" />
+          </div>
+          <div class="input-group">
+            <p class="prefix">RoomID</p>
+            <input type='search' name='roomId' id='roomId' autocapitalize='none' autocorrect='off' placeholder="Enter room ID" />
+          </div>
+          <button type='submit' >Join</button>
+        </form>
+      </section>
+      <h3>No login required</h3>
+    </main>
+  
+    <!-- <footer>
+      <p>© 2023 ChatRoom</p>
+    </footer> -->
+  </div>
+
+  <script src="./scripts/home.scripts.js"></script>
+</body>
+</html> 

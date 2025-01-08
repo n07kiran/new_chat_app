@@ -1,0 +1,51 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>ChatRoom.com</title>
+    <link rel="stylesheet" href="chatRoom.css">
+  </head>
+  <body>
+    
+    <div id="room id">Room Id : </div>
+    <div id="no of users">Online users  : </div>
+    <div id="user-list">Users: </div>
+
+    <ul id="messages"></ul>
+    <form id="form" action="">
+      <input id="input" autocomplete="off" />
+      <button type="submit">Send</button>
+      <button id="toggle-btn">Disconnect</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/scripts/chatRoom.scripts.js"></script>
+    </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>ChatRoom.com</title>
+    <link rel="stylesheet" href="/css/chatRoom.css">
+</head>
+<body>
+    <div class="navBar">
+      <div id="room id">
+        <span>Room ID: </span>
+        <span></span>
+    </div>
+    <div id="no of users">Online users: </div>
+    <div id="user-list">Users: </div>
+    </div>
+    <ul id="messages"></ul>
+    <form id="form" action="">
+        <input id="input" placeholder="Send a message" autocomplete="off" />
+        <button type="submit">Send</button>
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/scripts/chatRoom.scripts.js"></script>
+</body>
+</html>
